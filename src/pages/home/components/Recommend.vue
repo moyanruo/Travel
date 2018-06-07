@@ -46,7 +46,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import '~styles/mixins.styl';
+@import '~styles/mixins.styl'
+@import '~styles/varibles.styl'
 
 .title {
   margin-top: 0.3125rem;
@@ -91,7 +92,7 @@ export default {
       background: #ff9300;
       padding: 0 0.2rem;
       border-radius: 0.6rem;
-      color: #fff;
+      color: $whiteTextColor;
       width: 5.375rem;
     }
   }
