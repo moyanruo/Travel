@@ -18,24 +18,27 @@
 <script>
 export default {
   name: 'HomeWeekend',
+  props: {
+    weekendList: Array
+  },
   data () {
     return {
-      weekendList: [{
-        id: '001',
-        imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/b7/8a08a1023062b3.jpg_r_640x214_d7cb475c.jpg',
-        title: '最赞的海滨浴场',
-        desc: '跳进海里，享受铺天盖地的清凉吧'
-      }, {
-        id: '002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/7f/fa4eb0ca72409d.jpg_r_640x214_2f2a860e.jpg',
-        title: '大连必游TOP10',
-        desc: '爱上北方的碧海蓝天'
-      }, {
-        id: '003',
-        imgUrl: 'https://imgs.qunarzz.com/sight/source/1507/6b/70d17d828d87e1.jpg_r_640x214_6a995270.jpg',
-        title: '周末游首选',
-        desc: '当地人经常出没的地方'
-      }]
+      // weekendList: [{
+      //   id: '001',
+      //   imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/b7/8a08a1023062b3.jpg_r_640x214_d7cb475c.jpg',
+      //   title: '最赞的海滨浴场',
+      //   desc: '跳进海里，享受铺天盖地的清凉吧'
+      // }, {
+      //   id: '002',
+      //   imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/7f/fa4eb0ca72409d.jpg_r_640x214_2f2a860e.jpg',
+      //   title: '大连必游TOP10',
+      //   desc: '爱上北方的碧海蓝天'
+      // }, {
+      //   id: '003',
+      //   imgUrl: 'https://imgs.qunarzz.com/sight/source/1507/6b/70d17d828d87e1.jpg_r_640x214_6a995270.jpg',
+      //   title: '周末游首选',
+      //   desc: '当地人经常出没的地方'
+      // }]
     }
   }
 }
@@ -56,7 +59,7 @@ export default {
 .item-img-wrapper {
   overflow: hidden;
   height: 0;
-  padding-bottom: 33.9%;
+  padding-bottom: 37.9%;
 }
 
 .item-img {

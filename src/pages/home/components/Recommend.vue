@@ -17,26 +17,29 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    recommendList: Array
+  },
   data () {
     return {
-      recommendList: [{
-        id: '001',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1707/57/5729585581b6732fa3.water.jpg_200x200_85298361.jpg',
-        title: '大连森林动物园',
-        desc: '浪漫大连首站，大连森林动物园'
-      },
-      {
-        id: '002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_200x200_4ab5da75.jpg',
-        title: '大连亚圣海洋世界',
-        desc: '浪漫大连首站，大连森林动物园'
-      },
-      {
-        id: '003',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1703/94/944fc059260bd728a3.water.jpg_200x200_742cb84f.jpg',
-        title: '海昌发现王国',
-        desc: '浪漫大连首站，大连森林动物园'
-      }]
+      // recommendList: [{
+      //   id: '001',
+      //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/1707/57/5729585581b6732fa3.water.jpg_200x200_85298361.jpg',
+      //   title: '大连森林动物园',
+      //   desc: '浪漫大连首站，大连森林动物园'
+      // },
+      // {
+      //   id: '002',
+      //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_200x200_4ab5da75.jpg',
+      //   title: '大连亚圣海洋世界',
+      //   desc: '浪漫大连首站，大连森林动物园'
+      // },
+      // {
+      //   id: '003',
+      //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/1703/94/944fc059260bd728a3.water.jpg_200x200_742cb84f.jpg',
+      //   title: '海昌发现王国',
+      //   desc: '浪漫大连首站，大连森林动物园'
+      // }]
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <swiper :options="swiperOption">
+    <swiper :options="swiperOption" v-if="showSwiper">
       <!-- slides -->
       <swiper-slide v-for="item of swiperList" :key="item.id">
         <img class="swiper-img" :src="item.imgUrl" alt="">
@@ -17,6 +17,9 @@
 <script>
 export default {
   name: 'HomeSwiper',
+  props: {
+    swiperList: Array
+  },
   data () {
     return {
       swiperOption: {
@@ -26,23 +29,28 @@ export default {
         pagination: '.swiper-pagination',
         loop: true,
         autoplay: 2000
-      },
-      swiperList: [{
-        id: '001',
-        imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1806/1c/4847ea66072c7b02.jpg_750x200_c32457fb.jpg'
-      }, {
-        id: '002',
-        imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1803/98/0a2e0bd8eb0c0802.png_750x200_0a34d4a8.png'
-      }, {
-        id: '003',
-        imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1805/3b/ef86879aa50e3002.jpg_750x200_2a108508.jpg'
-      }, {
-        id: '004',
-        imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1805/b6/2330c92270c7e802.jpg_750x200_425e2121.jpg'
-      }, {
-        id: '005',
-        imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1709/39/b98fdb3ee7478e02.jpg_750x200_be64b756.jpg'
-      }]
+      }
+      // swiperList: [{
+      //   id: '001',
+      //   imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1806/1c/4847ea66072c7b02.jpg_750x200_c32457fb.jpg'
+      // }, {
+      //   id: '002',
+      //   imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1803/98/0a2e0bd8eb0c0802.png_750x200_0a34d4a8.png'
+      // }, {
+      //   id: '003',
+      //   imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1805/3b/ef86879aa50e3002.jpg_750x200_2a108508.jpg'
+      // }, {
+      //   id: '004',
+      //   imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1805/b6/2330c92270c7e802.jpg_750x200_425e2121.jpg'
+      // }, {
+      //   id: '005',
+      //   imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1709/39/b98fdb3ee7478e02.jpg_750x200_be64b756.jpg'
+      // }]
+    }
+  },
+  computed: {
+    showSwiper () {
+      return this.swiperList.length
     }
   }
 }
