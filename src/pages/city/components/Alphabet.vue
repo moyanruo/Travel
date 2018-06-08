@@ -1,6 +1,7 @@
 <template>
   <div>
     <ul class="list">
+      <!-- 如果手机上面滑动字母，整个页面都滑动，则在事件 @touchstart 后面 加上prevent修饰符，加上之后，点击事件不好用 -->
       <li class="item" v-for="item of letters" :key="item" @click="handleLetterClick" @touchstart="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEn" :ref="item">{{item}}</li>
     </ul>
   </div>

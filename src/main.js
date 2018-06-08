@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import fastclick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+// 引入该文件可解决部分低版本手机不支持es6，显示白屏的问题
+import 'babel-polyfill'
 import store from './store'
 import 'styles/reset.css'
 import 'styles/border.css'

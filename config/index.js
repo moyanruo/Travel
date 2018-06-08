@@ -12,6 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
+        // 与后台联调api，需要将 target 的地址改为 后台api的接口地址,并将pathRewrite去掉即可
         target: 'http://localhost:8080',
         pathRewrite: {
           '^/api': '/static/mock/'
@@ -57,6 +58,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
+    // 设置 npm run build 打包目录
     assetsPublicPath: '/',
 
     /**
