@@ -53,27 +53,27 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    line-height: 2rem;
+    line-height: 0.6rem;
     color: $whiteTextColor;
     background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 
     .banner-title {
       flex: 1;
-      font-size: 1rem;
+      font-size: 0.32rem;
       padding: 0 0.2rem;
     }
 
     .banner-number {
-      line-height: 2rem;
-      height: 2rem;
-      padding: 0 1rem;
-      margin-top: 0.2rem;
-      border-radius: 1rem;
+      line-height: 0.32rem;
+      height: 0.32rem;
+      padding: 0 0.4rem;
+      margin-top: 0.14rem;
+      border-radius: 0.2rem;
       background: rgba(0, 0, 0, 0.8);
-      font-size: 1rem;
+      font-size: 0.24rem;
 
       .banner-icon {
-        font-size: 1rem;
+        font-size: 0.24rem;
         padding: 0 0.2rem;
       }
     }

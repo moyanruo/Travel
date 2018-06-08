@@ -3,7 +3,7 @@
     <div class="title">热销推荐</div>
     <ul>
       <!-- router-lin 标签上加上 tag ，则标签就不会被渲染成 a 标签，而是被渲染成 tag 里面指定的标签 -->
-      <router-link class="item" v-for="item of recommendList" :key="item.id" tag="li" :to="'/detail/' + item.id">
+      <router-link class="item border-bottom" v-for="item of recommendList" :key="item.id" tag="li" :to="'/detail/' + item.id">
         <img :src="item.imgUrl" alt="" class="item-img">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -33,50 +33,47 @@ export default {
 @import '~styles/varibles.styl'
 
 .title {
-  margin-top: 0.3125rem;
-  line-height: 2.75rem;
+  margin-top: 0.2rem;
+  line-height: 0.8rem;
   background: #eee;
-  text-indent: center;
-  font-size: 16px;
-  padding-left: 0.3125rem;
+  text-indent: 0.2rem;
 }
 
 .item {
   overflow: hidden;
   display: flex;
-  height: 6.125rem;
+  height: 1.9rem;
 
   .item-img {
-    width: 5.375rem;
-    height: 5.375rem;
-    padding: 0.125rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: 0.1rem;
   }
 
   .item-info {
     flex: 1;
-    padding: 0.125rem;
+    padding: 0.1rem;
     min-width: 0;
 
     .item-title {
-      line-height: 1.5625rem;
-      font-size: 1rem;
+      line-height: 0.54rem;
+      font-size: 0.32rem;
       ellipsis: ellipsis();
     }
 
     .item-desc {
-      line-height: 1.875rem;
+      line-height: 0.4rem;
       color: #ccc;
       ellipsis: ellipsis();
     }
 
     .item-button {
-      line-height: 1.25rem;
+      line-height: 0.44rem;
       margin-top: 0.16rem;
       background: #ff9300;
       padding: 0 0.2rem;
       border-radius: 0.6rem;
       color: $whiteTextColor;
-      width: 5.375rem;
     }
   }
 }

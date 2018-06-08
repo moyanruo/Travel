@@ -22,15 +22,15 @@ export default {
   text-align: center;
   color: $whiteTextColor;
   background: $bgColor;
-  font-size: 1rem;
+  font-size: 0.32rem;
 
   .header-back {
     position: absolute;
     top: 0;
     left: 0;
-    width: 3rem;
+    width: 0.64rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.4rem;
     color: $whiteTextColor;
   }
 }

@@ -50,30 +50,31 @@ export default {
 
 .header-abs {
   position: absolute;
-  left: 0.3rem;
-  top: 0.3rem;
-  width: 2.3rem;
-  height: 2.3rem;
-  line-height: 2.3rem;
+  left: 0.2rem;
+  top: 0.2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
   text-align: center;
-  border-radius: 3rem;
+  border-radius: 0.4rem;
   background: rgba(0, 0, 0, 0.5);
 
   .header-abs-back {
     color: $whiteTextColor;
-    font-size: 1rem;
+    font-size: 0.4rem;
     font-weight: bold;
   }
 }
 
 .header-fixed {
+  z-index: 2;
   position: fixed;
   height: $headerHeight;
   line-height: $headerHeight;
   text-align: center;
   color: $whiteTextColor;
   background: $bgColor;
-  font-size: 1rem;
+  font-size: 0.32rem;
   left: 0;
   top: 0;
   width: 100%;
@@ -82,9 +83,9 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    width: 3rem;
+    width: 0.64rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.4rem;
     color: $whiteTextColor;
   }
 }

@@ -69,14 +69,13 @@ export default {
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: 2rem;
-  right: 0.2rem;
+  top: 1.58rem;
+  right: 0rem;
   bottom: 0;
-  width: 1rem;
-  text-size: 0.1625rem;
+  width: 0.4rem;
 
   .item {
-    padding: 0.2rem 0.1rem;
+    line-height: 0.4rem;
     text-align: center;
     color: $bgColor;
   }

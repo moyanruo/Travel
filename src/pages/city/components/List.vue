@@ -78,28 +78,28 @@ export default {
 
 .border-topbottom {
   &:before {
-    border-color: #777;
+    border-color: #ccc;
   }
 
   &:after {
-    border-color: #777;
+    border-color: #ccc;
   }
 }
 
 .list {
   overflow: hidden;
   position: absolute;
-  top: 5.125rem;
+  top: 1.58rem;
   left: 0;
   bottom: 0;
   right: 0;
 
   .title {
-    line-height: 2.1875rem;
+    line-height: 0.54rem;
     background: #eee;
-    padding-left: 0.3125rem;
+    padding-left: 0.2rem;
     color: #666;
-    font-size: 0.875rem;
+    font-size: 0.26rem;
   }
 
   .button-list {
@@ -108,24 +108,22 @@ export default {
 
     .button-wrapper {
       float: left;
-      width: 31.33%;
-      padding: 0.2rem 0.2rem;
+      width: 33.33%;
 
       .button {
+        margin: 0.1rem;
         text-align: center;
-        border: 0.03125rem solid #ccc;
+        border: 0.02rem solid #ccc;
         padding: 0.3rem;
-        border-radius: 0.3rem;
+        border-radius: 0.06rem;
       }
     }
   }
 
   .item-list {
     .item {
-      line-height: 2.8125rem;
-      color: #666;
-      padding-left: 0.5rem;
-      border-bottom: 0.0625rem solid #ccc;
+      line-height: 0.76rem;
+      padding-left: 0.2rem;
     }
   }
 }

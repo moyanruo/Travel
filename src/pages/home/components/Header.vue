@@ -43,26 +43,26 @@ export default {
   color: $whiteTextColor;
 
   .header-left {
-    width: 2.1rem;
+    width: 0.64rem;
     float: left;
     text-align: center;
   }
 
   .header-input {
     flex: 1;
-    height: 2rem;
-    line-height: 2rem;
-    margin-top: 0.35rem;
-    margin-left: 0.625rem;
-    padding-left: 1.25rem;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    margin-top: 0.12rem;
+    margin-left: 0.2rem;
+    padding-left: 0.2rem;
     background: $whiteTextColor;
-    border-radius: 0.3125rem;
+    border-radius: 0.1rem;
     color: #ccc;
   }
 
   .header-right {
-    min-width: 4rem;
-    padding: 0 0.3rem;
+    min-width: 1.04rem;
+    padding: 0 0.1rem;
     float: left;
     text-align: center;
     color: $whiteTextColor;

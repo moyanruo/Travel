@@ -5,8 +5,8 @@
     </div>
     <div class="search-content" ref="search" v-show="keyword">
       <ul>
-        <li class="search-item" v-for="item of list" :key="item.id" @click="handleCityClick(item.name)">{{item.name}}</li>
-        <li class="search-item" v-show="hasNoData">没有找到匹配数据</li>
+        <li class="search-item border-bottom" v-for="item of list" :key="item.id" @click="handleCityClick(item.name)">{{item.name}}</li>
+        <li class="search-item border-bottom" v-show="hasNoData">没有找到匹配数据</li>
       </ul>
     </div>
   </div>
@@ -77,18 +77,18 @@ export default {
 @import '~styles/varibles.styl';
 
 .search {
-  height: 2.5rem;
-  padding: 0 0.3rem; // 上下 左右
+  height: 0.72rem;
+  padding: 0 0.1rem; // 上下 左右
   background: $bgColor;
 
   .search-input {
     box-sizing: border-box;
     width: 100%;
-    height: 2.3125rem;
+    height: 0.62rem;
     padding: 0 0.1rem;
-    line-height: 2.3125rem;
+    line-height: 0.62rem;
     text-align: center;
-    border-radius: 0.5rem;
+    border-radius: 0.06rem;
     color: #666;
   }
 }
@@ -98,14 +98,14 @@ export default {
   overflow: hidden;
   position: absolute;
   width: 100%;
-  top: 5.2rem;
+  top: 1.58rem;
   left: 0;
   bottom: 0;
   background: #eee;
 
   .search-item {
-    line-height: 2rem;
-    padding-left: 1rem;
+    line-height: 0.62rem;
+    padding-left: 0.2rem;
     background: #fff;
     color: #666;
   }
