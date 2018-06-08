@@ -13,11 +13,11 @@ export default new Vuex.Store({
   //   }
   // },
   // 键值对相同时可以简写,省略键
-  mutations,
-  // 实现计算
-  getters: {
-    doubleCity (state) {
-      return state.city + ' ' + state.city
-    }
-  }
+  mutations
+  // // 实现计算
+  // getters: {
+  //   doubleCity (state) {
+  //     return state.city + ' ' + state.city
+  //   }
+  // }
 })
