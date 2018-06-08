@@ -2,14 +2,15 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item" v-for="item of recommendList" :key="item.id">
+      <!-- router-lin 标签上加上 tag ，则标签就不会被渲染成 a 标签，而是被渲染成 tag 里面指定的标签 -->
+      <router-link class="item" v-for="item of recommendList" :key="item.id" tag="li" :to="'/detail/' + item.id">
         <img :src="item.imgUrl" alt="" class="item-img">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
           <button class="item-button">查看详情</button>
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
@@ -22,24 +23,6 @@ export default {
   },
   data () {
     return {
-      // recommendList: [{
-      //   id: '001',
-      //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/1707/57/5729585581b6732fa3.water.jpg_200x200_85298361.jpg',
-      //   title: '大连森林动物园',
-      //   desc: '浪漫大连首站，大连森林动物园'
-      // },
-      // {
-      //   id: '002',
-      //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_200x200_4ab5da75.jpg',
-      //   title: '大连亚圣海洋世界',
-      //   desc: '浪漫大连首站，大连森林动物园'
-      // },
-      // {
-      //   id: '003',
-      //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/1703/94/944fc059260bd728a3.water.jpg_200x200_742cb84f.jpg',
-      //   title: '海昌发现王国',
-      //   desc: '浪漫大连首站，大连森林动物园'
-      // }]
     }
   }
 }
