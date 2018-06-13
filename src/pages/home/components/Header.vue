@@ -23,6 +23,7 @@ import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
   computed: {
+    // 使用 mapState 把 vuex 里面的 state 里面的 city 映射到当前组件的一个名字叫做 city 的计算属性中
     ...mapState(['city'])
     // ...mapGetters(['doubleCity'])
   }
